@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>NUMERA — Professional Accounting Software Suite | One-Time License</title>
+<meta name="description" content="NUMERA offers 12 professional accounting apps — NumaBook, NumaPay, NumaBill, NumaSpend and more. One-time license, 30-day free trial, affordable pricing for businesses worldwide."/>
+<meta name="keywords" content="accounting software, bookkeeping software, payroll software, invoicing app, inventory management, one time license accounting, numera accounting, small business software"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://numera-software.github.io/"/>
+<meta property="og:title" content="NUMERA — Professional Accounting Software Suite"/>
+<meta property="og:description" content="12 accounting apps. One-time license. 30-day free trial."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://numera-software.github.io/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"NUMERA","description":"Professional accounting software suite with 12 apps for businesses of all sizes.","applicationCategory":"BusinessApplication","operatingSystem":"Windows, macOS","publisher":{"@type":"Organization","name":"NUMERA","url":"https://numera-software.github.io"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --black:#080808; --card:#111111; --card2:#191919; --white:#ffffff;
+  --gold:#C9963A; --gold-lt:#E4B86A; --gold-bg:rgba(201,150,58,.09);
+  --ga:#C2C2C2; --gb:#606060; --gc:#282828;
+  --border:#1C1C1C; --b2:#2C2C2C;
+  --book:#22C55E; --pay:#EF4444; --stock:#F97316; --tax:#3B82F6;
+  --bill:#A855F7; --spend:#EC4899; --insight:#06B6D4; --pos:#EAB308;
+  --trade:#14B8A6; --hr:#F43F5E; --vault:#8B5CF6; --crm:#10B981;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{background:var(--black);color:var(--white);font-family:'Montserrat',sans-serif;line-height:1.65;overflow-x:hidden;font-size:15px;}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--black);}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px;}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;font-weight:700;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:0 52px;height:64px;background:rgba(8,8,8,.96);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);}
+.logo{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;letter-spacing:4px;color:var(--white);text-decoration:none;text-transform:uppercase;}
+.logo span{color:var(--gold);}
+.nav-links{display:flex;gap:28px;list-style:none;}
+.nav-links a{color:var(--gb);font-size:11px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;text-decoration:none;transition:color .2s;}
+.nav-links a:hover{color:var(--white);}
+.btn-gold{background:var(--gold);color:var(--black);padding:9px 22px;border-radius:3px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .15s;display:inline-block;}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-1px);}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:100px 40px 60px;position:relative;overflow:hidden;}
+.hero-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(201,150,58,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(201,150,58,.03) 1px,transparent 1px);background-size:64px 64px;}
+.hero-glow{position:absolute;top:50%;left:50%;transform:translate(-50%,-58%);width:700px;height:700px;background:radial-gradient(circle,rgba(201,150,58,.065) 0%,transparent 68%);pointer-events:none;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--b2);padding:6px 16px;border-radius:100px;font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gb);margin-bottom:36px;z-index:1;animation:fadeUp .7s ease both;}
+.pdot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.3;}}
+.hero-word{font-family:'Montserrat',sans-serif;font-size:clamp(58px,10vw,108px);font-weight:800;letter-spacing:8px;line-height:1;color:var(--white);text-transform:uppercase;z-index:1;animation:fadeUp .7s .1s ease both;}
+.hero-word span{color:var(--gold);font-size:.55em;vertical-align:baseline;letter-spacing:0;}
+.hero-sub{font-size:12px;font-weight:500;color:var(--gb);letter-spacing:5px;text-transform:uppercase;margin-top:14px;margin-bottom:28px;z-index:1;animation:fadeUp .7s .18s ease both;}
+.hero-desc{max-width:520px;font-size:15px;line-height:1.78;color:var(--ga);font-weight:400;margin-bottom:44px;z-index:1;animation:fadeUp .7s .26s ease both;}
+.hero-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;z-index:1;animation:fadeUp .7s .32s ease both;}
+.btn-l{padding:14px 36px;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;border-radius:3px;cursor:pointer;transition:all .2s;display:inline-block;}
+.btn-l.fill{background:var(--gold);color:var(--black);border:1px solid var(--gold);}
+.btn-l.fill:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,150,58,.25);}
+.btn-l.ol{background:transparent;color:var(--white);border:1px solid var(--b2);}
+.btn-l.ol:hover{border-color:var(--gb);transform:translateY(-2px);}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* ── STATS ── */
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.stat{padding:36px 20px;text-align:center;border-right:1px solid var(--border);}
+.stat:last-child{border-right:none;}
+.stat-n{font-family:'Montserrat',sans-serif;font-size:34px;font-weight:700;letter-spacing:-1px;line-height:1;color:var(--white);}
+.stat-n em{color:var(--gold);font-style:normal;}
+.stat-l{font-size:10px;color:var(--gb);letter-spacing:2px;text-transform:uppercase;margin-top:6px;}
+
+/* ── MARQUEE ── */
+.mband{background:var(--card);overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:14px 0;}
+.minner{display:flex;width:max-content;animation:marq 38s linear infinite;}
+.mitm{display:flex;align-items:center;gap:12px;padding:0 22px;font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gc);white-space:nowrap;}
+.mitm em{color:var(--gold);font-style:normal;}
+@keyframes marq{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* ── SECTION ── */
+.wrap{padding:90px 52px;}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.eyebrow::after{content:'';width:32px;height:1px;background:var(--gold);opacity:.5;}
+.sec-h{font-family:'Montserrat',sans-serif;font-size:clamp(26px,3.5vw,40px);font-weight:700;letter-spacing:-.5px;line-height:1.15;margin-bottom:14px;}
+.sec-sub{font-size:14px;color:var(--ga);max-width:560px;line-height:1.78;margin-bottom:56px;}
+.hr{height:1px;background:var(--border);margin:0 52px;}
+
+/* ── APP GRID ── */
+.apps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;background:transparent;border:none;}
+
+.app-card{
+  background:var(--card);
+  padding:40px 36px;
+  position:relative;overflow:hidden;
+  transition:background .25s;
+  display:flex;flex-direction:column;
+  min-height:420px;
+  border:1px solid var(--border);
+  border-radius:4px;
+}
+.app-card:hover{background:var(--card2);}
+.app-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--ac,var(--gold));
+  transform:scaleX(0);transform-origin:left;transition:transform .35s;
+}
+.app-card:hover::before{transform:scaleX(1);}
+
+/* coming soon badge */
+.cs-badge{
+  position:absolute;top:16px;right:16px;z-index:10;
+  background:rgba(201,150,58,.1);color:var(--gold);
+  border:1px solid rgba(201,150,58,.28);
+  font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  padding:4px 10px;border-radius:2px;
+}
+
+/* app top row */
+.app-top{display:flex;align-items:flex-start;gap:14px;margin-bottom:6px;}
+.app-bar{width:4px;min-height:56px;border-radius:2px;background:var(--ac,var(--gold));flex-shrink:0;margin-top:2px;}
+.app-meta{}
+.app-cat{font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gb);margin-bottom:6px;}
+.app-name{font-family:'Montserrat',sans-serif;font-size:30px;font-weight:700;letter-spacing:-.5px;line-height:1;color:var(--white);}
+
+/* price */
+.app-price-row{
+  display:flex;align-items:baseline;gap:5px;
+  margin:16px 0 18px;
+  padding:10px 14px;
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--border);
+  border-radius:3px;
+}
+.app-price-dollar{font-size:13px;color:var(--gold);font-weight:600;}
+.app-price-num{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;letter-spacing:-.5px;line-height:1;color:var(--ga);}
+.app-price-tag{font-size:10px;color:var(--gb);font-weight:400;margin-left:2px;}
+
+/* features */
+.feat-grid{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:24px;flex:1;}
+.feat-box{
+  font-size:10px;font-weight:600;letter-spacing:.6px;text-transform:uppercase;
+  padding:6px 12px;border-radius:2px;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--b2);
+  color:var(--ga);
+  transition:background .2s,border-color .2s,color .2s;
+  display:flex;align-items:center;
+  min-height:30px;
+  line-height:1.3;
+}
+.app-card:hover .feat-box{
+  background:var(--ac-bg,rgba(201,150,58,.08));
+  border-color:rgba(201,150,58,.3);
+  color:var(--white);
+}
+
+/* buttons */
+.app-btns{display:flex;gap:8px;margin-top:auto;}
+.btn-app{
+  flex:1;padding:12px 0;text-align:center;
+  font-family:'Montserrat',sans-serif;
+  font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;
+  cursor:pointer;border-radius:2px;transition:all .2s;
+  display:block;text-decoration:none;
+}
+.btn-app.dl{background:transparent;color:var(--white);border:1px solid var(--b2);}
+.btn-app.dl:hover{background:var(--ac,var(--gold));color:var(--black);border-color:transparent;}
+.btn-app.act{background:var(--gold);color:var(--black);border:1px solid var(--gold);}
+.btn-app.act:hover{background:var(--gold-lt);}
+.btn-app.cs-btn{background:transparent;color:var(--gb);border:1px solid var(--border);cursor:not-allowed;opacity:.5;}
+.btn-app.notify{background:transparent;color:var(--gold);border:1px solid rgba(201,150,58,.3);cursor:pointer;}
+.btn-app.notify:hover{background:var(--gold-bg);}
+
+/* ── GALLERY ── */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.gallery-item{background:var(--card);border:1px solid var(--border);border-radius:3px;overflow:hidden;transition:transform .25s,border-color .25s;cursor:pointer;}
+.gallery-item:hover{transform:translateY(-4px);border-color:var(--gold);}
+.g-screen{height:200px;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(140deg,#111 0%,#181818 100%);overflow:hidden;}
+.g-screen::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,150,58,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(201,150,58,.025) 1px,transparent 1px);background-size:22px 22px;}
+.g-mock{display:flex;flex-direction:column;gap:7px;width:78%;position:relative;z-index:1;}
+.gbar{height:6px;border-radius:2px;background:var(--b2);}
+.gbar.ac{background:var(--ac,var(--gold));width:42%;}
+.grow{display:flex;gap:7px;}
+.gcell{height:30px;border-radius:2px;background:var(--b2);flex:1;}
+.gcell.tall{height:52px;}
+.g-label{padding:16px 18px;border-top:1px solid var(--border);}
+.g-name{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;color:var(--white);margin-bottom:3px;}
+.g-desc{font-size:11px;color:var(--gb);}
+
+/* ── WHY ── */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.why-card{border:1px solid var(--border);padding:32px 26px;border-radius:3px;background:var(--card);transition:border-color .25s,transform .2s;}
+.why-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+.why-icon-box{width:44px;height:44px;border:1px solid var(--b2);border-radius:3px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;background:var(--card2);}
+.why-title{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;margin-bottom:10px;}
+.why-txt{font-size:13px;color:var(--ga);line-height:1.72;}
+
+/* ── TRIAL ── */
+.trial-wrap{margin:0 52px;background:var(--card);border:1px solid var(--border);padding:56px;display:flex;align-items:center;justify-content:space-between;gap:36px;flex-wrap:wrap;}
+.trial-h{font-family:'Montserrat',sans-serif;font-size:clamp(22px,2.8vw,34px);font-weight:700;letter-spacing:-.3px;margin-bottom:10px;}
+.trial-h em{color:var(--gold);font-style:normal;}
+.trial-sub{font-size:13px;color:var(--ga);max-width:500px;line-height:1.75;}
+
+/* ── BLOG ── */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:36px;}
+.blog-card{background:var(--card);padding:32px 26px;display:flex;flex-direction:column;transition:background .2s;cursor:pointer;color:inherit;}
+.blog-card:hover{background:var(--card2);}
+.blog-tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,150,58,.25);padding:4px 10px;border-radius:2px;margin-bottom:14px;align-self:flex-start;}
+.blog-title{font-family:'Montserrat',sans-serif;font-size:15px;font-weight:700;line-height:1.35;letter-spacing:-.2px;margin-bottom:10px;color:var(--white);}
+.blog-exc{font-size:12px;color:var(--ga);line-height:1.72;flex:1;margin-bottom:20px;}
+.blog-meta{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:var(--gb);padding-top:16px;border-top:1px solid var(--border);}
+.blog-rm{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold);}
+.blog-cta{text-align:center;}
+
+/* ── NOTIFY MODAL ── */
+.modal-bg{display:none;position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.86);backdrop-filter:blur(6px);align-items:center;justify-content:center;}
+.modal-bg.open{display:flex;}
+.modal-box{background:var(--card);border:1px solid var(--b2);padding:48px 40px;max-width:400px;width:90%;text-align:center;position:relative;border-top:2px solid var(--gold);animation:mIn .3s ease;}
+@keyframes mIn{from{opacity:0;transform:scale(.94) translateY(10px);}to{opacity:1;transform:scale(1) translateY(0);}}
+.modal-close{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--gb);font-size:18px;cursor:pointer;}
+.modal-close:hover{color:var(--white);}
+.modal-badge{display:inline-block;background:var(--gold-bg);color:var(--gold);border:1px solid rgba(201,150,58,.25);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin-bottom:16px;}
+.modal-title{font-family:'Montserrat',sans-serif;font-size:18px;font-weight:700;letter-spacing:-.3px;margin-bottom:10px;}
+.modal-txt{font-size:12px;color:var(--ga);line-height:1.7;margin-bottom:22px;}
+.modal-form{display:flex;border:1px solid var(--b2);border-radius:2px;overflow:hidden;}
+.modal-input{flex:1;padding:10px 12px;background:transparent;border:none;outline:none;color:var(--white);font-family:'Montserrat',sans-serif;font-size:12px;}
+.modal-input::placeholder{color:var(--gb);}
+.modal-submit{padding:10px 16px;background:var(--gold);border:none;color:var(--black);font-family:'Montserrat',sans-serif;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:background .2s;}
+.modal-submit:hover{background:var(--gold-lt);}
+
+/* ── BLOG POST MODAL ── */
+.post-modal-bg{display:none;position:fixed;inset:0;z-index:600;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);overflow-y:auto;}
+.post-modal-bg.open{display:flex;align-items:flex-start;justify-content:center;padding:60px 20px;}
+.post-box{background:var(--card);border:1px solid var(--b2);max-width:700px;width:100%;position:relative;border-top:2px solid var(--gold);animation:mIn .3s ease;}
+.post-close{position:absolute;top:16px;right:20px;background:none;border:none;color:var(--gb);font-size:18px;cursor:pointer;z-index:10;}
+.post-close:hover{color:var(--white);}
+.post-header{padding:40px 40px 28px;border-bottom:1px solid var(--border);}
+.post-tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,150,58,.25);padding:4px 10px;border-radius:2px;margin-bottom:14px;}
+.post-title{font-family:'Montserrat',sans-serif;font-size:22px;font-weight:700;letter-spacing:-.4px;line-height:1.3;margin-bottom:10px;}
+.post-meta{font-size:11px;color:var(--gb);}
+.post-body{padding:32px 40px;font-size:14px;color:var(--ga);line-height:1.8;}
+.post-body h3{font-family:'Montserrat',sans-serif;font-size:16px;font-weight:700;color:var(--white);margin:24px 0 10px;}
+.post-body p{margin-bottom:14px;}
+.post-body ul{margin:10px 0 14px 20px;}
+.post-body li{margin-bottom:6px;}
+
+/* ── FOOTER ── */
+footer{background:#0E0E0E;border-top:1px solid var(--b2);padding:64px 52px 36px;margin-top:80px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:52px;}
+.footer-logo{font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;letter-spacing:4px;color:var(--white);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:baseline;}
+.footer-logo span{color:var(--gold);}
+.footer-txt{font-size:13px;color:#999;line-height:1.7;max-width:260px;margin-bottom:18px;}
+.gumroad-row{display:inline-flex;align-items:center;gap:8px;font-size:11px;color:#555;}
+.gumroad-badge{background:#222;padding:3px 10px;border-radius:2px;font-size:9px;font-weight:700;letter-spacing:1.5px;color:#888;text-transform:uppercase;border:1px solid #333;}
+.f-head{font-size:10px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--white);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid #222;}
+.f-links{list-style:none;display:flex;flex-direction:column;gap:12px;}
+.f-links a{font-size:13px;color:#888;text-decoration:none;transition:color .2s;}
+.f-links a:hover{color:var(--white);}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;padding-top:28px;border-top:1px solid #222;flex-wrap:wrap;gap:14px;}
+.f-copy{font-size:12px;color:#555;line-height:1.6;}
+.f-contact{display:flex;gap:28px;align-items:center;}
+.f-contact a{font-size:13px;font-weight:600;color:#999;text-decoration:none;transition:color .2s;display:flex;align-items:center;gap:9px;letter-spacing:.2px;}
+.f-contact a:hover{color:var(--gold);}
+.f-contact-icon{width:30px;height:30px;border-radius:3px;background:#1a1a1a;border:1px solid #2a2a2a;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+
+/* no scroll-hide animation — all content visible */
+
+/* ── RESPONSIVE ── */
+@media(max-width:1100px){
+  .apps-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:repeat(2,1fr);}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:768px){
+  nav{padding:0 18px;}
+  .nav-links{display:none;}
+  .wrap{padding:60px 18px;}
+  .hr,.trial-wrap{margin:0 18px;}
+  .stats-row{grid-template-columns:repeat(2,1fr);}
+  .apps-grid,.blog-grid{grid-template-columns:1fr;}
+  .why-grid,.gallery-grid{grid-template-columns:1fr;}
+  footer{padding:36px 18px 24px;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .trial-wrap{padding:32px 18px;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:12px;}
+  .f-contact{flex-direction:column;gap:10px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NOTIFY MODAL ═══ -->
+<div class="modal-bg" id="notifyModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeNotify()">✕</button>
+    <div class="modal-badge">Coming Soon</div>
+    <h3 class="modal-title" id="notifyAppName">App Name</h3>
+    <p class="modal-txt">This app is currently in development. Leave your email and we'll notify you the moment it's ready to download.</p>
+    <div class="modal-form">
+      <input class="modal-input" type="email" placeholder="your@email.com" id="notifyEmail"/>
+      <button class="modal-submit" onclick="submitNotify()">Notify Me</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ BLOG POST MODAL ═══ -->
+<div class="post-modal-bg" id="postModal">
+  <div class="post-box">
+    <button class="post-close" onclick="closePost()">✕</button>
+    <div class="post-header">
+      <div class="post-tag" id="postTag"></div>
+      <h2 class="post-title" id="postTitle"></h2>
+      <div class="post-meta" id="postMeta"></div>
+    </div>
+    <div class="post-body" id="postBody"></div>
+  </div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <a href="#hero" class="logo">NUMERA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#apps">Apps</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#why">Why NUMERA</a></li>
+    <li><a href="#blog">Blog</a></li>
+  </ul>
+  <div>
+    <a href="#trial" class="btn-gold">Start Free Trial</a>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-badge"><span class="pdot"></span>12 Professional Accounting Apps</div>
+  <h1 class="hero-word">NUMERA<span>.</span></h1>
+  <p class="hero-sub">Where Numbers Work For You</p>
+  <p class="hero-desc">The most complete accounting software suite ever built. 12 purpose-built apps covering every financial workflow your business needs — all under one affordable, one-time license.</p>
+  <div class="hero-btns">
+    <a href="#apps" class="btn-l fill">Explore All Apps</a>
+    <a href="#trial" class="btn-l ol">How the Trial Works</a>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<div class="stats-row">
+  <div class="stat"><div class="stat-n">12<em>+</em></div><div class="stat-l">Powerful Apps</div></div>
+  <div class="stat"><div class="stat-n">50<em>K+</em></div><div class="stat-l">Businesses Served</div></div>
+  <div class="stat"><div class="stat-n">30</div><div class="stat-l">Day Free Trial</div></div>
+  <div class="stat"><div class="stat-n">1<em>×</em></div><div class="stat-l">One-Time License</div></div>
+</div>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="mband" aria-hidden="true">
+  <div class="minner">
+    <span class="mitm">NumaBook <em>·</em></span><span class="mitm">NumaPay <em>·</em></span><span class="mitm">NumaStock <em>·</em></span><span class="mitm">NumaTax <em>·</em></span><span class="mitm">NumaBill <em>·</em></span><span class="mitm">NumaSpend <em>·</em></span><span class="mitm">NumaInsight <em>·</em></span><span class="mitm">NumaPOS <em>·</em></span><span class="mitm">NumaTrade <em>·</em></span><span class="mitm">NumaHR <em>·</em></span><span class="mitm">NumaVault <em>·</em></span><span class="mitm">NumaCRM <em>·</em></span>
+    <span class="mitm">NumaBook <em>·</em></span><span class="mitm">NumaPay <em>·</em></span><span class="mitm">NumaStock <em>·</em></span><span class="mitm">NumaTax <em>·</em></span><span class="mitm">NumaBill <em>·</em></span><span class="mitm">NumaSpend <em>·</em></span><span class="mitm">NumaInsight <em>·</em></span><span class="mitm">NumaPOS <em>·</em></span><span class="mitm">NumaTrade <em>·</em></span><span class="mitm">NumaHR <em>·</em></span><span class="mitm">NumaVault <em>·</em></span><span class="mitm">NumaCRM <em>·</em></span>
+  </div>
+</div>
+
+<!-- ═══ APPS ═══ -->
+<section id="apps" class="wrap">
+  <div class="eyebrow">Complete App Suite</div>
+  <h2 class="sec-h">12 Apps. One Ecosystem.</h2>
+  <p class="sec-sub">Each app is independently downloadable and free to use for 30 days. After the trial ends, the software locks — activate it anytime with a one-time payment to unlock permanently.</p>
+
+  <div class="apps-grid">
+
+    <!-- NumaBook -->
+    <article class="app-card reveal" style="--ac:var(--book);--ac-bg:rgba(34,197,94,.08)">
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Ledger &amp; Bookkeeping</div>
+          <h3 class="app-name">NumaBook</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">19</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Double-Entry Ledger</span>
+        <span class="feat-box">Bank Reconciliation</span>
+        <span class="feat-box">Journal Entries</span>
+        <span class="feat-box">Chart of Accounts</span>
+        <span class="feat-box">Balance Sheet</span>
+        <span class="feat-box">Income Statement</span>
+        <span class="feat-box">Audit Trail</span>
+        <span class="feat-box">Multi-Period Reports</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaBook')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaPay -->
+    <article class="app-card reveal" style="--ac:var(--pay);--ac-bg:rgba(239,68,68,.08)">
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Payroll Management</div>
+          <h3 class="app-name">NumaPay</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">19</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Salary Automation</span>
+        <span class="feat-box">Auto Tax Deductions</span>
+        <span class="feat-box">Payslip Generator</span>
+        <span class="feat-box">Custom Allowances</span>
+        <span class="feat-box">Multi-Pay Schedules</span>
+        <span class="feat-box">Statutory Compliance</span>
+        <span class="feat-box">Employee Portal</span>
+        <span class="feat-box">Payroll History</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaPay')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaBill -->
+    <article class="app-card reveal" style="--ac:var(--bill);--ac-bg:rgba(168,85,247,.08)">
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Invoicing &amp; Billing</div>
+          <h3 class="app-name">NumaBill</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">15</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Professional Templates</span>
+        <span class="feat-box">Recurring Billing</span>
+        <span class="feat-box">Multi-Currency</span>
+        <span class="feat-box">Auto Reminders</span>
+        <span class="feat-box">Payment Tracking</span>
+        <span class="feat-box">Credit Notes</span>
+        <span class="feat-box">PDF Export</span>
+        <span class="feat-box">Client Portal</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaBill')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaSpend -->
+    <article class="app-card reveal" style="--ac:var(--spend);--ac-bg:rgba(236,72,153,.08)">
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Expense Tracking</div>
+          <h3 class="app-name">NumaSpend</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">15</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Expense Categories</span>
+        <span class="feat-box">Receipt Upload</span>
+        <span class="feat-box">Budget Controls</span>
+        <span class="feat-box">Approval Workflow</span>
+        <span class="feat-box">Overspend Alerts</span>
+        <span class="feat-box">Reimbursements</span>
+        <span class="feat-box">Monthly Reports</span>
+        <span class="feat-box">Department View</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaSpend')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaStock -->
+    <article class="app-card reveal" style="--ac:var(--stock);--ac-bg:rgba(249,115,22,.08)">
+      <div class="cs-badge">Coming Soon</div>
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Inventory Management</div>
+          <h3 class="app-name">NumaStock</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">19</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Real-Time Inventory</span>
+        <span class="feat-box">Multi-Warehouse</span>
+        <span class="feat-box">Barcode Scanning</span>
+        <span class="feat-box">Low-Stock Alerts</span>
+        <span class="feat-box">FIFO / LIFO / WAC</span>
+        <span class="feat-box">Stock Adjustments</span>
+        <span class="feat-box">Goods In / Out</span>
+        <span class="feat-box">Stock Valuation</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaStock')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaTax -->
+    <article class="app-card reveal" style="--ac:var(--tax);--ac-bg:rgba(59,130,246,.08)">
+      <div class="cs-badge">Coming Soon</div>
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Tax Management</div>
+          <h3 class="app-name">NumaTax</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">19</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">GST / VAT Support</span>
+        <span class="feat-box">Auto Calculations</span>
+        <span class="feat-box">Filing Reminders</span>
+        <span class="feat-box">Tax Reports</span>
+        <span class="feat-box">Multi-Jurisdiction</span>
+        <span class="feat-box">Tax Code Setup</span>
+        <span class="feat-box">Audit-Ready Docs</span>
+        <span class="feat-box">Tax History</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaTax')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaInsight -->
+    <article class="app-card reveal" style="--ac:var(--insight);--ac-bg:rgba(6,182,212,.08)">
+      <div class="cs-badge">Coming Soon</div>
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Financial Analytics</div>
+          <h3 class="app-name">NumaInsight</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">25</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Custom Dashboards</span>
+        <span class="feat-box">P&amp;L Reports</span>
+        <span class="feat-box">Cash Flow Charts</span>
+        <span class="feat-box">Trend Analysis</span>
+        <span class="feat-box">KPI Tracking</span>
+        <span class="feat-box">PDF / Excel Export</span>
+        <span class="feat-box">Shared Reports</span>
+        <span class="feat-box">Cross-App Data</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaInsight')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaPOS -->
+    <article class="app-card reveal" style="--ac:var(--pos);--ac-bg:rgba(234,179,8,.08)">
+      <div class="cs-badge">Coming Soon</div>
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Point of Sale</div>
+          <h3 class="app-name">NumaPOS</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">25</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Barcode Scanning</span>
+        <span class="feat-box">Multi-Payment Types</span>
+        <span class="feat-box">Discount &amp; Loyalty</span>
+        <span class="feat-box">End-of-Day Reports</span>
+        <span class="feat-box">Offline Mode</span>
+        <span class="feat-box">Receipt Printing</span>
+        <span class="feat-box">Inventory Sync</span>
+        <span class="feat-box">Shift Management</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaPOS')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaTrade -->
+    <article class="app-card reveal" style="--ac:var(--trade);--ac-bg:rgba(20,184,166,.08)">
+      <div class="cs-badge">Coming Soon</div>
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Purchase &amp; Sales Orders</div>
+          <h3 class="app-name">NumaTrade</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">19</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Purchase Orders</span>
+        <span class="feat-box">Sales Pipeline</span>
+        <span class="feat-box">Vendor Management</span>
+        <span class="feat-box">Quotations</span>
+        <span class="feat-box">Order Tracking</span>
+        <span class="feat-box">Goods Receipt</span>
+        <span class="feat-box">Reorder Points</span>
+        <span class="feat-box">Supplier Pricing</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaTrade')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaHR -->
+    <article class="app-card reveal" style="--ac:var(--hr);--ac-bg:rgba(244,63,94,.08)">
+      <div class="cs-badge">Coming Soon</div>
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Human Resources</div>
+          <h3 class="app-name">NumaHR</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">19</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Employee Records</span>
+        <span class="feat-box">Leave Management</span>
+        <span class="feat-box">Onboarding Docs</span>
+        <span class="feat-box">Performance Reviews</span>
+        <span class="feat-box">Attendance Tracking</span>
+        <span class="feat-box">Document Storage</span>
+        <span class="feat-box">Payroll Sync</span>
+        <span class="feat-box">Org Chart</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaHR')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaVault -->
+    <article class="app-card reveal" style="--ac:var(--vault);--ac-bg:rgba(139,92,246,.08)">
+      <div class="cs-badge">Coming Soon</div>
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Bank &amp; Cash Management</div>
+          <h3 class="app-name">NumaVault</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">19</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Multi-Account View</span>
+        <span class="feat-box">Cash Flow Tracking</span>
+        <span class="feat-box">Bank Reconciliation</span>
+        <span class="feat-box">Fund Transfers</span>
+        <span class="feat-box">Full Audit Trail</span>
+        <span class="feat-box">Petty Cash</span>
+        <span class="feat-box">Bank Integration</span>
+        <span class="feat-box">Statement Import</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaVault')">Notify Me</button>
+      </div>
+    </article>
+
+    <!-- NumaCRM -->
+    <article class="app-card reveal" style="--ac:var(--crm);--ac-bg:rgba(16,185,129,.08)">
+      <div class="cs-badge">Coming Soon</div>
+      <div class="app-top">
+        <div class="app-bar"></div>
+        <div class="app-meta">
+          <div class="app-cat">Customer Relationship Mgmt</div>
+          <h3 class="app-name">NumaCRM</h3>
+        </div>
+      </div>
+      <div class="app-price-row">
+        <span class="app-price-dollar">$</span>
+        <span class="app-price-num">19</span>
+        <span class="app-price-tag">one-time license · USD</span>
+      </div>
+      <div class="feat-grid">
+        <span class="feat-box">Customer Profiles</span>
+        <span class="feat-box">Sales Pipeline</span>
+        <span class="feat-box">Deal Tracking</span>
+        <span class="feat-box">Follow-Up Reminders</span>
+        <span class="feat-box">Communication Log</span>
+        <span class="feat-box">Invoice Integration</span>
+        <span class="feat-box">Lead Management</span>
+        <span class="feat-box">Activity History</span>
+      </div>
+      <div class="app-btns">
+        <button class="btn-app cs-btn" disabled>Coming Soon</button>
+        <button class="btn-app notify" onclick="openNotify('NumaCRM')">Notify Me</button>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ═══ GALLERY ═══ -->
+<section id="gallery" class="wrap">
+  <div class="eyebrow">App Showcase</div>
+  <h2 class="sec-h">A Glimpse Inside the Apps</h2>
+  <p class="sec-sub">Clean, professional interfaces designed for speed and clarity. Every screen built to help you work faster, not harder.</p>
+  <div class="gallery-grid">
+
+    <div class="gallery-item reveal" style="--ac:var(--book)">
+      <div class="g-screen">
+        <div class="g-mock">
+          <div class="gbar ac"></div>
+          <div class="gbar" style="width:68%"></div>
+          <div class="grow"><div class="gcell tall"></div><div class="gcell tall"></div><div class="gcell tall"></div></div>
+          <div class="gbar" style="width:52%"></div>
+          <div class="grow"><div class="gcell"></div><div class="gcell" style="flex:2"></div></div>
+        </div>
+      </div>
+      <div class="g-label"><div class="g-name">NumaBook</div><div class="g-desc">Ledger, accounts &amp; financial statements</div></div>
+    </div>
+
+    <div class="gallery-item reveal" style="--ac:var(--bill)">
+      <div class="g-screen">
+        <div class="g-mock">
+          <div class="gbar ac"></div>
+          <div class="grow"><div class="gcell" style="flex:2;height:22px;background:rgba(168,85,247,.28)"></div><div class="gcell"></div></div>
+          <div class="gbar" style="width:78%"></div>
+          <div class="grow"><div class="gcell tall"></div><div class="gcell tall"></div></div>
+          <div class="gbar" style="width:38%"></div>
+        </div>
+      </div>
+      <div class="g-label"><div class="g-name">NumaBill</div><div class="g-desc">Professional invoicing &amp; billing</div></div>
+    </div>
+
+    <div class="gallery-item reveal" style="--ac:var(--pay)">
+      <div class="g-screen">
+        <div class="g-mock">
+          <div class="gbar ac"></div>
+          <div class="grow"><div class="gcell"></div><div class="gcell"></div><div class="gcell"></div></div>
+          <div class="gbar" style="width:60%"></div>
+          <div class="grow"><div class="gcell tall" style="flex:3"></div><div class="gcell tall"></div></div>
+        </div>
+      </div>
+      <div class="g-label"><div class="g-name">NumaPay</div><div class="g-desc">Automated payroll &amp; payslips</div></div>
+    </div>
+
+    <div class="gallery-item reveal" style="--ac:var(--spend)">
+      <div class="g-screen">
+        <div class="g-mock">
+          <div class="gbar ac"></div>
+          <div class="grow"><div class="gcell" style="height:62px;background:rgba(236,72,153,.15)"></div></div>
+          <div class="gbar" style="width:72%"></div>
+          <div class="grow"><div class="gcell"></div><div class="gcell"></div></div>
+        </div>
+      </div>
+      <div class="g-label"><div class="g-name">NumaSpend</div><div class="g-desc">Expense tracking &amp; budget management</div></div>
+    </div>
+
+    <div class="gallery-item reveal" style="--ac:var(--insight)">
+      <div class="g-screen">
+        <div class="g-mock">
+          <div class="gbar ac"></div>
+          <div class="grow">
+            <div class="gcell" style="height:58px;background:rgba(6,182,212,.18)"></div>
+            <div class="gcell" style="height:58px;background:rgba(6,182,212,.08)"></div>
+            <div class="gcell" style="height:58px;background:rgba(6,182,212,.13)"></div>
+          </div>
+          <div class="gbar" style="width:50%"></div>
+        </div>
+      </div>
+      <div class="g-label"><div class="g-name">NumaInsight</div><div class="g-desc">Dashboards &amp; financial analytics</div></div>
+    </div>
+
+    <div class="gallery-item reveal" style="--ac:var(--pos)">
+      <div class="g-screen">
+        <div class="g-mock">
+          <div class="grow"><div class="gcell" style="height:42px;background:rgba(234,179,8,.22)"></div><div class="gcell" style="height:42px;background:rgba(234,179,8,.1)"></div></div>
+          <div class="grow"><div class="gcell"></div><div class="gcell"></div><div class="gcell"></div></div>
+          <div class="gbar ac" style="width:58%"></div>
+        </div>
+      </div>
+      <div class="g-label"><div class="g-name">NumaPOS</div><div class="g-desc">Point of sale &amp; retail management</div></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="hr"></div>
+
+<!-- ═══ WHY ═══ -->
+<section id="why" class="wrap">
+  <div class="eyebrow">Why NUMERA</div>
+  <h2 class="sec-h">Built Different. Built Better.</h2>
+  <p class="sec-sub">The only accounting suite offering 12 standalone apps under one-time licensing — no subscriptions, no hidden fees, full ownership forever.</p>
+  <div class="why-grid">
+
+    <div class="why-card reveal">
+      <div class="why-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+      </div>
+      <h3 class="why-title">One-Time License — Own It Forever</h3>
+      <p class="why-txt">Pay once per app, own it permanently. No monthly subscriptions, no annual renewals. Your cost is fixed the day you buy — forever.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      </div>
+      <h3 class="why-title">Modular — Start Small, Scale Big</h3>
+      <p class="why-txt">Download only what you need. Every module is standalone yet integrated — your data flows seamlessly across the whole NUMERA ecosystem.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+      </div>
+      <h3 class="why-title">Built for Global Business</h3>
+      <p class="why-txt">Multi-currency, configurable GST/VAT, and a neutral design — NUMERA works for businesses across every country and industry without modification.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 1 1 8 0v4"/></svg>
+      </div>
+      <h3 class="why-title">Enterprise-Grade Security</h3>
+      <p class="why-txt">Role-based access, encrypted local storage, full audit trails and bank-level security standards — your financial data is always protected.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+      </div>
+      <h3 class="why-title">30-Day Trial — Completely Free</h3>
+      <p class="why-txt">Every app includes a full 30-day free trial. Download, use with real business data, then activate with one payment if you love it.</p>
+    </div>
+
+    <div class="why-card reveal">
+      <div class="why-icon-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </div>
+      <h3 class="why-title">Dedicated Support, Always</h3>
+      <p class="why-txt">Email support included with every license. Priority and phone support on higher plans. Real help from real people whenever you need it.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ TRIAL STRIP ═══ -->
+<div class="trial-wrap" id="trial">
+  <div>
+    <h2 class="trial-h">30-Day Free Trial on Every App</h2>
+    <p class="trial-sub">Download any app and use it free for 30 days with your real business data. The software locks when the trial ends — activate with a one-time payment to own it permanently. No subscription. No recurring fees.</p>
+  </div>
+  <div>
+    <a href="#apps" class="btn-l fill" style="display:inline-block;text-align:center;min-width:200px;">View All Apps →</a>
+  </div>
+</div>
+
+<div class="hr" style="margin-top:72px;"></div>
+
+<!-- ═══ BLOG ═══ -->
+<section id="blog" class="wrap">
+  <div class="eyebrow">Blog &amp; Insights</div>
+  <h2 class="sec-h">Resources for Smarter Finances</h2>
+  <p class="sec-sub">Practical guides, accounting tips, and business finance insights — written to help you make better decisions and grow your business.</p>
+  <div class="blog-grid">
+
+    <div class="blog-card reveal" onclick="openPost(0)" role="button" tabindex="0">
+      <span class="blog-tag">Software Tips</span>
+      <h3 class="blog-title">Why One-Time License Software Beats SaaS for Small Businesses</h3>
+      <p class="blog-exc">Monthly subscriptions feel affordable — until you run the numbers over 3 years. An honest breakdown of SaaS vs one-time license, and why more businesses are switching.</p>
+      <div class="blog-meta"><span>Feb 28, 2026 · 6 min</span><span class="blog-rm">Read →</span></div>
+    </div>
+
+    <div class="blog-card reveal" onclick="openPost(1)" role="button" tabindex="0">
+      <span class="blog-tag">Accounting Guide</span>
+      <h3 class="blog-title">Small Business Bookkeeping: From Day One to Year-End Close</h3>
+      <p class="blog-exc">How to set up your chart of accounts, record transactions correctly, and close your books at year-end — in plain language, no accounting degree required.</p>
+      <div class="blog-meta"><span>Feb 24, 2026 · 9 min</span><span class="blog-rm">Read →</span></div>
+    </div>
+
+    <div class="blog-card reveal" onclick="openPost(2)" role="button" tabindex="0">
+      <span class="blog-tag">Finance 101</span>
+      <h3 class="blog-title">Cash Flow vs. Profit: The Difference That Can Make or Break Your Business</h3>
+      <p class="blog-exc">You can be profitable on paper and still run out of cash. Understanding this difference is one of the most critical concepts for every business owner.</p>
+      <div class="blog-meta"><span>Feb 20, 2026 · 5 min</span><span class="blog-rm">Read →</span></div>
+    </div>
+
+    <div class="blog-card reveal" onclick="openPost(3)" role="button" tabindex="0">
+      <span class="blog-tag">Payroll</span>
+      <h3 class="blog-title">How to Manage Payroll for a Growing Team Without an HR Department</h3>
+      <p class="blog-exc">Growing from 5 to 20 employees brings new payroll complexity. This guide shows how to handle multiple pay rates, statutory deductions and leave balances accurately.</p>
+      <div class="blog-meta"><span>Feb 15, 2026 · 7 min</span><span class="blog-rm">Read →</span></div>
+    </div>
+
+    <div class="blog-card reveal" onclick="openPost(4)" role="button" tabindex="0">
+      <span class="blog-tag">Productivity</span>
+      <h3 class="blog-title">7 Signs Your Business Needs Better Invoicing Software Right Now</h3>
+      <p class="blog-exc">Still chasing late payments manually or building invoices in spreadsheets? These 7 warning signs mean your process is costing you time and money every month.</p>
+      <div class="blog-meta"><span>Feb 10, 2026 · 5 min</span><span class="blog-rm">Read →</span></div>
+    </div>
+
+    <div class="blog-card reveal" onclick="openPost(5)" role="button" tabindex="0">
+      <span class="blog-tag">Product Update</span>
+      <h3 class="blog-title">NUMERA App Roadmap: What's Coming in 2025</h3>
+      <p class="blog-exc">NumaStock, NumaTax, NumaInsight, NumaPOS and more are in active development. Here's our full roadmap, release timeline, and how to get early access.</p>
+      <div class="blog-meta"><span>Feb 5, 2026 · 4 min</span><span class="blog-rm">Read →</span></div>
+    </div>
+
+  </div>
+  <div class="blog-cta">
+    <a href="#" class="btn-l ol" style="display:inline-block;">View All Articles →</a>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-grid">
+
+    <div>
+      <div class="footer-logo">NUMERA<span>.</span></div>
+      <p class="footer-txt">Professional accounting software for businesses worldwide. 12 powerful apps, one-time licensing, 30-day free trial on every product.</p>
+      <div class="gumroad-row">Payments secured by <span class="gumroad-badge">Gumroad</span> &nbsp;·&nbsp; USD</div>
+    </div>
+
+    <div>
+      <div class="f-head">All Apps</div>
+      <ul class="f-links" style="display:grid;grid-template-columns:1fr 1fr;gap:10px 20px;">
+        <li><a href="#apps">NumaBook</a></li>
+        <li><a href="#apps">NumaPay</a></li>
+        <li><a href="#apps">NumaBill</a></li>
+        <li><a href="#apps">NumaSpend</a></li>
+        <li><a href="#apps">NumaStock</a></li>
+        <li><a href="#apps">NumaTax</a></li>
+        <li><a href="#apps">NumaInsight</a></li>
+        <li><a href="#apps">NumaPOS</a></li>
+        <li><a href="#apps">NumaTrade</a></li>
+        <li><a href="#apps">NumaHR</a></li>
+        <li><a href="#apps">NumaVault</a></li>
+        <li><a href="#apps">NumaCRM</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="f-head">Company</div>
+      <ul class="f-links">
+        <li><a href="#">About NUMERA</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#apps">All Apps</a></li>
+        <li><a href="#why">Why NUMERA</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="f-head">Support</div>
+      <p style="font-size:13px;color:#888;line-height:1.75;margin-bottom:14px;">Need help with activation, setup, or any question? Reach us directly — we respond fast.</p>
+      <a href="https://wa.me/923097700215" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;margin-bottom:10px;">
+        💬 WhatsApp Support
+      </a><br/>
+      <a href="https://mail.google.com/mail/?view=cm&to=istahsanali05@gmail.com&su=NUMERA Support Request" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;">
+        ✉️ Email Support
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="f-copy">© 2026 NUMERA Software. All rights reserved.</div>
+    <div class="f-contact">
+      <a href="https://wa.me/923097700215" target="_blank" rel="noopener">
+        <span class="f-contact-icon">💬</span>+92 309 7700215
+      </a>
+      <a href="mailto:istahsanali05@gmail.com">
+        <span class="f-contact-icon">✉️</span>istahsanali05@gmail.com
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── NOTIFY MODAL ──
+let _app = '';
+function openNotify(name) {
+  _app = name;
+  document.getElementById('notifyAppName').textContent = name;
+  document.getElementById('notifyModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeNotify() {
+  document.getElementById('notifyModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function submitNotify() {
+  const e = document.getElementById('notifyEmail').value.trim();
+  if (!e || !e.includes('@')) { alert('Please enter a valid email.'); return; }
+  closeNotify();
+  alert('Thanks! We\'ll notify you the moment ' + _app + ' is ready.');
+}
+document.getElementById('notifyModal').addEventListener('click', function(e) { if (e.target === this) closeNotify(); });
+
+// ── BLOG POSTS ──
+const posts = [
+  { tag:'Software Tips', title:'Why One-Time License Software Beats SaaS for Small Businesses', date:'February 28, 2026 · 6 min read', body:`<h3>The Hidden Cost of "Affordable" Monthly Fees</h3><p>When you sign up for a SaaS accounting tool at $20/month, it feels like nothing. But do the math: that's $240 a year, $720 over 3 years, and $1,200 over 5 years — for a single app. Multiply that across 3–4 tools your business needs and you could be spending $3,000–5,000 every five years just on software subscriptions.</p><h3>One-Time License: Pay Once, Own Forever</h3><p>A one-time license flips this entirely. You pay once and the software is yours permanently. No renewals, no price increases, no "your plan has been discontinued" emails.</p><ul><li>Full ownership from day one</li><li>Budget certainty — your cost is fixed</li><li>No dependency on a vendor's pricing decisions</li><li>Works offline, no account required to run daily</li></ul><h3>The Total Cost Comparison</h3><p>NUMERA apps are priced from $15 — less than a single month of most SaaS competitors. Over 5 years, you save hundreds of dollars per app. That money stays in your business.</p>` },
+  { tag:'Accounting Guide', title:'Small Business Bookkeeping: From Day One to Year-End Close', date:'February 24, 2026 · 9 min read', body:`<h3>Why Starting Right Matters</h3><p>Many small business owners start recording transactions only when tax season arrives — then spend weeks untangling a year's worth of chaos. Starting properly from day one takes 15 minutes per day and saves days of work every year.</p><h3>Step 1: Set Up Your Chart of Accounts</h3><p>Your chart of accounts is the backbone of your bookkeeping. It categorises every transaction into groups: assets, liabilities, equity, income, and expenses.</p><ul><li>Assets: what you own (cash, equipment, receivables)</li><li>Liabilities: what you owe (loans, payables)</li><li>Income: revenue from sales and services</li><li>Expenses: costs of running the business</li></ul><h3>Step 2: Record Every Transaction</h3><p>Using double-entry bookkeeping, every transaction affects at least two accounts. When you receive payment: debit Cash, credit Accounts Receivable. NumaBook handles this automatically.</p><h3>Step 3: Reconcile Monthly</h3><p>Bank reconciliation means matching your records to your actual bank statement. Do this monthly — it catches errors and missing entries before they compound into bigger problems.</p><h3>Year-End Close</h3><p>At year end, review all accounts, clear temporary income and expense accounts to retained earnings, and produce your three key reports: Balance Sheet, Income Statement, and Cash Flow Statement.</p>` },
+  { tag:'Finance 101', title:'Cash Flow vs. Profit: The Difference That Can Make or Break Your Business', date:'February 20, 2026 · 5 min read', body:`<h3>The Profitable Business That Went Bankrupt</h3><p>It happens more than you think. A business shows healthy profit on its income statement but runs out of cash to pay suppliers and staff. How? Because profit and cash are not the same thing.</p><h3>Profit is What You Earn. Cash Flow is What You Have.</h3><p>Profit is calculated on an accrual basis — you record income when you invoice, not when you're paid. If you invoice $50,000 in December but don't collect until February, your December profit looks excellent but your bank balance tells a different story.</p><p>Cash flow tracks the actual movement of money in and out of your bank account in real time.</p><h3>Why This Kills More Businesses Than Failure</h3><ul><li>You can't pay suppliers with profit — you pay with cash</li><li>Payroll must be funded from cash, not paper earnings</li><li>Growth requires cash reserves, not just profitability</li></ul><h3>How to Monitor Both</h3><p>Run both a Profit &amp; Loss report (profitability) and a Cash Flow Statement (liquidity) every month. The gap between them shows exactly where your working capital is tied up — usually in unpaid invoices or excess inventory.</p>` },
+  { tag:'Payroll', title:'How to Manage Payroll for a Growing Team Without an HR Department', date:'February 15, 2026 · 7 min read', body:`<h3>The Challenge of Growing Payroll</h3><p>When you have 3 employees, payroll is manageable in a spreadsheet. At 15 employees with different pay rates, shift allowances, and varying leave balances — it becomes a full-time job in itself.</p><h3>The 5 Most Common Payroll Mistakes</h3><ul><li>Missing statutory deductions (tax, pension, insurance)</li><li>Incorrect overtime calculations</li><li>Forgetting unpaid leave adjustments</li><li>Inconsistent payslip formats causing confusion</li><li>No audit trail for payroll disputes</li></ul><h3>Automate Before You Need To</h3><p>The right time to set up payroll software is before payroll gets complex, not after. Setting up pay schedules and tax codes takes a few hours upfront but saves enormous time every single pay cycle thereafter.</p><h3>What Good Payroll Software Does</h3><ul><li>Calculates net pay automatically from gross salary and deductions</li><li>Generates professional payslips for every employee</li><li>Maintains complete payroll history for audit purposes</li><li>Flags anomalies — unusual overtime, missed entries, leave overruns</li></ul>` },
+  { tag:'Productivity', title:'7 Signs Your Business Needs Better Invoicing Software Right Now', date:'February 10, 2026 · 5 min read', body:`<h3>1. You're Chasing Payments Manually</h3><p>If getting paid requires you to personally follow up with clients, your invoicing system has failed. Good software sends automatic reminders at 7, 14, and 30 days overdue — without you involved.</p><h3>2. Invoices Are Built in Word or Excel</h3><p>Template-based invoices are slow, easy to miscalculate, and look unprofessional. A proper tool generates invoices from your product list in under 60 seconds.</p><h3>3. You Can't See Who Owes You Money</h3><p>Accounts receivable visibility is critical. You should see, in real time, every outstanding invoice, its age, and its status — without hunting through files.</p><h3>4. No Multi-Currency Support</h3><p>If any clients are overseas and you're calculating exchange rates manually, you're wasting time and risking costly errors every invoice.</p><h3>5. No Recurring Billing</h3><p>For retainer clients, manually recreating the same invoice every month is completely unnecessary. Automate it once, forget about it permanently.</p><h3>6. Non-Sequential Invoice Numbers</h3><p>Tax authorities often require sequential invoice numbering. Manual systems frequently produce gaps or duplicates that cause compliance problems.</p><h3>7. No Audit Trail</h3><p>If a client disputes an invoice and you can't prove when it was sent and whether it was modified — you have a serious legal and financial risk on your hands.</p>` },
+  { tag:'Product Update', title:'NUMERA App Roadmap: What\'s Coming in 2025', date:'February 5, 2026 · 4 min read', body:`<h3>Where We Are Today</h3><p>NUMERA is building a complete suite of 12 accounting apps designed for businesses of every size. Every app is available as a standalone one-time license, and all are currently in active development.</p><h3>The 2025 Roadmap</h3><ul><li><strong>NumaBook</strong> — Full double-entry ledger and financial statements. Q1 2025.</li><li><strong>NumaBill</strong> — Professional invoicing with recurring billing. Q1 2025.</li><li><strong>NumaSpend</strong> — Expense tracking and budget management. Q1 2025.</li><li><strong>NumaPay</strong> — Automated payroll and compliance. Q2 2025.</li><li><strong>NumaStock</strong> — Inventory with barcode and multi-warehouse. Q2 2025.</li><li><strong>NumaTax</strong> — GST/VAT and multi-jurisdiction tax. Q3 2025.</li><li><strong>NumaInsight</strong> — Business intelligence dashboards. Q3 2025.</li><li><strong>NumaPOS</strong> — Point of sale with offline mode. Q4 2025.</li><li><strong>NumaTrade, NumaHR, NumaVault, NumaCRM</strong> — Following in Q4 2025 and beyond.</li></ul><h3>Be the First to Know</h3><p>Click "Notify Me" on any app card to get an email the moment it's ready for download. Early notifiers will receive a launch discount on their license.</p>` }
+];
+
+function openPost(i) {
+  const p = posts[i];
+  document.getElementById('postTag').textContent = p.tag;
+  document.getElementById('postTitle').textContent = p.title;
+  document.getElementById('postMeta').textContent = p.date;
+  document.getElementById('postBody').innerHTML = p.body;
+  document.getElementById('postModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closePost() {
+  document.getElementById('postModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('postModal').addEventListener('click', function(e) { if (e.target === this) closePost(); });
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { closeNotify(); closePost(); } });
+</script>
+</body>
+</html>
